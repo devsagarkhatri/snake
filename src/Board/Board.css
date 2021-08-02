@@ -1,0 +1,68 @@
+h1 {
+  color: #e7bbc8 !important;
+}
+.board {
+  outline: 10px double #407353;
+  border: 10px double transparent;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("./../utils/photos/green_field_2.jpg");
+  background-repeat: repeat;
+  background-clip: border-box;
+}
+
+.row {
+  height: 35px;
+}
+
+.cell {
+  width: 35px;
+  height: 35px;
+  /* outline: 0px dashed rgba(250, 250, 250, 0.5); */
+  display: inline-block;
+}
+
+.cell-snake-body {
+  background: url("./../utils/photos/snake_texture_2.jpg");
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 7px 5px 6px rgba(0, 0, 0, 0.5);
+}
+
+.cell-food {
+  background-color: transparent;
+  transform: translateY(-5px);
+  outline: 0px;
+}
+.cell-food::before {
+  content: "🥚";
+  text-shadow: 7px 5px 6px rgba(0, 0, 0, 1);
+  text-align: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+.cell-snake-head {
+  background-color: #30475e;
+  background: url("./../utils/photos/snake_texture_2.jpg");
+  background-size: 100% 100%;
+  box-shadow: 7px 5px 6px rgba(0, 0, 0, 0.5);
+}
+.go-left {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.go-right {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.go-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.go-bottom {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
